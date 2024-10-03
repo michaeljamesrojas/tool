@@ -1,59 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 40px auto;
     padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-form {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-weight: bold;
+    font-size: 24px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-}
-
-button {
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
     display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"] {
     width: 100%;
     padding: 10px;
-    background: #333;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
     color: #fff;
+    padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background: #555;
-}
-
-#qrcode {
-    text-align: center;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  #qrcode {
     margin-top: 20px;
-}
+    text-align: center;
+  }
+  
+  #qrcode img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
