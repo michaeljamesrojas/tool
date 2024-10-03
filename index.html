@@ -22,6 +22,19 @@
             <button type="submit">Generate QR Code</button>
         </form>
         <div id="qrcode"></div>
+        <button onclick="downloadQRCode()">Download QR Code</button>
+
+        <script>
+        function downloadQRCode() {
+            const personName = "John Doe"; // Replace with the actual name of the person
+            const qrCodeUrl = "https://example.com/qr-code.png"; // Replace with the actual URL of the QR code image
+
+            const link = document.createElement("a");
+            link.href = qrCodeUrl;
+            link.download = `${personName}.png`;
+            link.click();
+        }
+        </script>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
     <script src="script.js"></script>
