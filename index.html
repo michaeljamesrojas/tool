@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Info QR Code Generator</title>
+    <title>User Info QR Code Generator and Scanner</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>User Info QR Code Generator</h1>
+        <h1>User Info QR Code Generator and Scanner</h1>
         <form id="userForm">
             <label for="name">Name:</label>
             <input type="text" id="name" required>
@@ -24,6 +24,12 @@
         <div id="qrcode"></div>
         <button onclick="downloadQRCode()">Download QR Code</button>
 
+        <h2>QR Code Scanner</h2>
+        <div id="scanner-container">
+            <video id="scanner"></video>
+        </div>
+        <div id="scan-result"></div>
+
         <script>
         function downloadQRCode() {
             const personName = "John Doe"; // Replace with the actual name of the person
@@ -37,6 +43,7 @@
         </script>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode"></script>
     <script src="script.js"></script>
 </body>
 </html>
